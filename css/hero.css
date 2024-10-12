@@ -1,0 +1,298 @@
+
+.hero{
+    height: 590px;
+    width: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* position: relative; */
+    overflow: hidden;
+    background: linear-gradient(to top right,  #ffffff ,  #e8ccff);
+    margin-top: 125px;
+}
+
+.semi-circle{
+    /* position: absolute; */
+    bottom: 0; /* Position at the bottom of the parent div */
+    left: 50%; /* Center it horizontally */
+    transform: translateY(58%); /* Adjust horizontal position */
+    width: 600px; /* Width to cover the full width of the parent */
+    height: 600px; /* Height of the semi-circle */
+    background-color: #8c00ff; /* Color of the semi-circle */
+    border-radius: 50%; /* Make it a circle */
+}
+
+.semi-circle img{
+    transform: translateY(-55%);
+    width: 560px;
+}
+
+.semi-circle img:hover{
+    transform: translateY(-51%);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.circle-image{
+    object-fit: cover;
+    order: 2;
+    margin-right: 5%;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 10%;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #8c00ff;
+}
+
+.intro-text h1{
+    font-size: 65px;
+}
+
+.intro-text p{
+    font-size: 17px;
+}
+
+.btn-course{
+    border: 1.5px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #8c00ff;
+    color: white;
+    font-size: 17px;
+    box-shadow: black 0.5px 2px 3px ;
+}
+
+.btn-course:hover{
+    border: 1.5px solid #8c00ff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #8c00ff;
+    transition: all 0.8s;    
+    transform: translateY(15%);
+    box-shadow: black 2px 6px 12px ;
+}
+
+
+/* responsive */
+@media (max-width:600px){
+
+    body{
+        position: relative;
+        z-index: -2;
+    }
+
+    .hero{
+        height: 410px;
+        width: 100%;
+        /* border: 2px solid; */
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
+        overflow: hidden;
+        background: linear-gradient(to top right,  #ffffff ,  #e8ccff);
+        position: relative;
+        z-index: -1;
+        margin-top: 125px;
+    }
+    
+    .semi-circle{
+        bottom: 0; /* Position at the bottom of the parent div */
+        left: 50%; /* Center it horizontally */
+        transform: translateY(5%); /* Adjust horizontal position */
+        width: 600px; /* Width to cover the full width of the parent */
+        height: 600px; /* Height of the semi-circle */
+        /* background-color: #8c00ff; */
+        background: linear-gradient(to right, #8c00ff, #3d00b3);
+        border-radius: 50%; /* Make it a circle */
+        display: flex;
+
+
+    }
+    
+    .semi-circle img{
+        transform: translateY(-43%);
+        width: 298px;
+        height: 298px;
+        margin-left: 135px;
+    }
+    
+    .semi-circle img:hover{
+        transform: translateY(-40%);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    .circle-image{
+        object-fit: cover;
+        order: 2;
+        margin-right: 5%;
+    }
+    
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: last baseline;
+        gap: 30px;
+        margin: 15px 25px;
+    }
+    
+    .intro-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #8c00ff;
+    }
+    
+    .intro-text h1{
+        font-size: 32px;
+    }
+    
+    .intro-text p{
+        font-size: 15.5px;
+    }
+    
+    .btn-course{
+        border: 1.5px solid white;
+        border-radius: 10px;
+        padding: 6px 15px;
+        background-color: #8c00ff;
+        color: white;
+        font-size: 17px;
+        box-shadow: black 0.5px 2px 3px ;
+        
+    }
+    
+    .btn-course:hover{
+        border: 1.5px solid #8c00ff;
+        border-radius: 10px;
+        padding: 6px 15px;
+        background: transparent;
+        color: #8c00ff;
+        transition: all 0.8s;    
+        transform: translateY(15%);
+        box-shadow: black 2px 6px 12px ;
+    }
+    
+
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+
+    body{
+        position: relative;
+        z-index: -2;
+    }
+
+    .hero{
+        height: 420px;
+        width: 100%;
+        /* border: 2px solid; */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: linear-gradient(to top right,  #ffffff ,  #e8ccff);
+        position: relative;
+        z-index: -1;
+        margin-top: 133px;
+        
+    }
+    
+    .semi-circle{
+        bottom: 0; /* Position at the bottom of the parent div */
+        left: 50%; /* Center it horizontally */
+        transform: translateY(5%); /* Adjust horizontal position */
+        width: 600px; /* Width to cover the full width of the parent */
+        height: 600px; /* Height of the semi-circle */
+        background-color: #8c00ff; /* Color of the semi-circle */
+        border-radius: 50%; /* Make it a circle */
+        display: flex;
+        margin-left: 200px;
+    }
+    
+    .semi-circle img{
+        transform: translateY(-40%);
+        width: 298px;
+        height: 298px;
+        margin-left: 160px;
+    }
+    
+    .semi-circle img:hover{
+        transform: translateY(-40%);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    .circle-image{
+        object-fit: cover;
+        order: 2;
+        margin-right: 5%;
+    }
+    
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+        gap: 30px;
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .intro-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #8c00ff;
+    }
+    
+    .intro-text h1{
+        font-size: 32px;
+    }
+    
+    .intro-text p{
+        font-size: 15.5px;
+    }
+    
+    .btn-course{
+        border: 1.5px solid white;
+        border-radius: 10px;
+        padding: 6px 15px;
+        background-color: #8c00ff;
+        color: white;
+        font-size: 16px;
+        box-shadow: black 0.5px 2px 3px ;   
+    }
+    
+    .btn-course:hover{
+        border: 1.5px solid #8c00ff;
+        border-radius: 10px;
+        padding: 6px 17px;
+        background: transparent;
+        color: #8c00ff;
+        transition: all 0.8s;    
+        transform: translateY(15%);
+        box-shadow: black 2px 6px 12px ;
+    }
+
+    .menu-items{
+        display: flex;
+    }
+    
+
+}

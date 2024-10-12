@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Blurred Body Effect */
+.blurred {
+    filter: blur(2.5px); /* Adjust the blur amount as needed */
+    transition: filter 0.8s ease; /* Smooth transition */
+}
+
+/* Floating Chat Icon */
+.chatbot-icon-container {
+    position: fixed; /* Make the chat icon fixed */
+    bottom: 70px;    /* Position it 20px from the bottom */
+    left: 30px;     /* Position it 20px from the right */
+    width: 80px;     /* Width of the icon */
+    height: 80px;    /* Height of the icon */
+    border-radius: 50%; /* Circular shape */
+    /* overflow: hidden; */
+    cursor: grab;   /* Initial cursor style */
+    z-index: 1000;  /* Ensure it is above other elements */
+    transition: transform 1s ease; /* Responsive transition */
+    box-shadow: #111 2px 4px 16px ;
+    border: rgba(38, 157, 255, 0.932) solid 1px;
+}
+
+.chat-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* .chat-circle{
+    width: 100%;
+    height: 100%;
+} */
+
+.chat-body img{
+    width: 300px;
+    border: rgba(40, 223, 255, 0.932) solid 2px;
+    border-radius: 50%;
+    box-shadow: #222 2px 8px 16px;
+}
+
+/* Chat Popup (Centered Popup) */
+.chat-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position for responsiveness */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    /* background-color: white; */
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+    border-radius: 15px; /* Rounded corners */
+    z-index: 1001; /* Above the icon */
+    animation: fadeIn 0.6s ease-in-out; /* Fade-in animation */
+    background: transparent;
+}
+
+
+/* Style for the chatbot icon container */
+#chatbot-icon-container {
+    cursor: pointer; /* Add a pointer cursor for better UX */
+    display: inline-block;
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: border 0.3s; /* Smooth transition for border changes */
+    border-radius: 50%;
+}
+
+/* Show Popup */
+.chat-popup.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -0%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Chat Header */
+.chat-header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    padding: 20px; /* Padding around header */
+    /* background: #f1f1f1; */
+    /* border-radius: 15px 15px 0 0;  */
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    visibility: hidden;
+}
+
+/* Close Button */
+.close-btn {
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    visibility: hidden;
+}
+
+.chat-body {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    background: transparent;
+}
+
+
+@media (max-width: 900px){
+    .chatbot-icon-container{
+        width: 60px;
+        height: 60px;
+        left: 15px;
+        bottom: 30px;
+    }
+    
+    .chat-body img{
+        width: 200px;
+    }
+         
+}

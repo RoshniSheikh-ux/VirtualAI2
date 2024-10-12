@@ -1,0 +1,111 @@
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 155px;
+    margin-bottom: 70px;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #8c00ff;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Work List */
+.work-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Work Item (Card) */
+.work-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: black 0.1px 1.5px 3px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;  /* Gap between cards */
+}
+
+/* Hover Effect */
+.work-item:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    box-shadow: black 1px 4px 16px;
+}
+
+/* Work Image */
+.work-image {
+    width: 150px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;  /* Spacing between image and text */
+    border: 1px solid #ccc;
+}
+
+/* Work Details */
+.work-details {
+    flex: 1;
+}
+
+.work-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.work-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .work-item {
+        flex-direction: row;
+    }
+
+    .work-details {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+    
+    .title {
+        font-size: 3rem;
+    }
+    
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px){
+    .title{
+        font-size: 2.2rem;
+    }
+}
